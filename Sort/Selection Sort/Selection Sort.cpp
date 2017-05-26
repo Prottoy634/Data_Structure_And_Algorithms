@@ -1,3 +1,6 @@
+/**
+Selection Sort for Ascending Order
+**/
 #include<iostream>
 using namespace std;
 void printArray(int arr[], int sz) //print values of array
@@ -7,12 +10,13 @@ void printArray(int arr[], int sz) //print values of array
         cout<<arr[i]<<endl;
     cout<<"\n";
 }
+
 void selection(int A[],int n)
 {
-    int minI;
+    int minI; // minI indicates the Index of minimum valued elements
     for(int i=0;i<n-1;i++)
     {
-     minI=i;
+     minI=i; 
      //cout<<i<<"th Pass:"<<endl;
      for(int j=i+1;j<n;j++) //finding minimum value from remaining elements
      {
